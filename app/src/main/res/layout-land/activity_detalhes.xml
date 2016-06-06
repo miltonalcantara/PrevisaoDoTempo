@@ -25,7 +25,7 @@
                     android:id="@+id/id_foto_local"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="@string/imagem_cidade"
+                    android:contentDescription="@string/imagem_local"
                     android:scaleType="fitXY" />
 
                 <FrameLayout

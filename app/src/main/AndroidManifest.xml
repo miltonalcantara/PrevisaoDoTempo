@@ -22,10 +22,10 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".NovoLocalActivity"
-            android:label="Adicionar Cidade" />
+            android:label="Adicionar local" />
         <activity
             android:name=".EditarLocalActivity"
-            android:label="Editar Cidade" />
+            android:label="Editar local" />
         <activity
             android:name=".SobreActivity"
             android:theme="@style/AppTheme.NoActionBar2" />
