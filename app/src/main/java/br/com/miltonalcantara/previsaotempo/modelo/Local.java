@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by Milton Alcântara on 02/06/2016.
  */
-public class Cidade implements Serializable {
+public class Local implements Serializable {
     private int id;
     private String nome;
     private String descricao;
@@ -17,7 +17,7 @@ public class Cidade implements Serializable {
     private String latitude;
     private String longitude;
 
-    public Cidade() {
+    public Local() {
     }
 
     public int getId() {

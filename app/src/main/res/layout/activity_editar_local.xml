@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".NovaCidadeActivity">
+    tools:context=".EditarLocalActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="phone"/>
+            android:inputType="phone" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -56,12 +56,12 @@
             android:inputType="phone" />
 
         <Button
-            android:id="@+id/button_add"
-            android:layout_width="128dp"
+            android:id="@+id/button_update"
+            android:layout_width="113dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:layout_height="wrap_content"
-            android:text="adicionar"
+            android:text="editar"
             android:theme="@style/botaoTheme"
             android:layout_gravity="end" />
     </LinearLayout>

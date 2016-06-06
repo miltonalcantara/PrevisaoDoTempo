@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 
-import br.com.miltonalcantara.previsaotempo.modelo.Cidade;
+import br.com.miltonalcantara.previsaotempo.modelo.Local;
 
 /**
  * Created by Milton Alcântara on 02/06/2016.
@@ -56,7 +56,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 " add column " + DATA_HORA + " text");
     }
 
-    public boolean inserirCidade(String nome, String latitude, String longitude) {
+    public boolean inserirLocal(String nome, String latitude, String longitude) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues content = new ContentValues();
         content.put(NOME, nome); //inserir aqui outras colunas
@@ -66,13 +66,13 @@ public class DBHelper extends SQLiteOpenHelper {
         return true;
     }
 
-    public ArrayList<Cidade> getTodasCidades() {
-        ArrayList<Cidade> myArray = new ArrayList<Cidade>();
+    public ArrayList<Local> getTodosLugares() {
+        ArrayList<Local> myArray = new ArrayList<Local>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cur = db.rawQuery("select * from " + TABELA, null);
         cur.moveToFirst();
         while (cur.isAfterLast() == false) {
-            Cidade c = new Cidade();
+            Local c = new Local();
             c.setId(cur.getInt(cur.getColumnIndex("id")));
             c.setNome(cur.getString(cur.getColumnIndex(NOME)));
             c.setLatitude(cur.getString(cur.getColumnIndex(LATITUDE)));
@@ -89,7 +89,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return myArray;
     }
 
-    public boolean atualizarCidade(int id, String nome, String latitude, String longitude) {
+    public boolean atualizarLocal(int id, String nome, String latitude, String longitude) {
 
         SQLiteDatabase db = this.getWritableDatabase();
 

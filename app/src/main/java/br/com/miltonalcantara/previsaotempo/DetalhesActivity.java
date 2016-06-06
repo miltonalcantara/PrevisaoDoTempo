@@ -19,19 +19,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import br.com.miltonalcantara.previsaotempo.api.Function;
-import br.com.miltonalcantara.previsaotempo.modelo.Cidade;
 
 public class DetalhesActivity extends AppCompatActivity {
 
-    ImageView fotoCidade;
+    ImageView fotoLocal;
     LinearLayout background;
 
     private int id;
-    private TextView nomeCidade;
+    private TextView nomeLocal;
     private TextView descricaoDoTempo;
     private TextView temperaturaAtual;
     private TextView umidadeDoAr;
@@ -58,11 +54,11 @@ public class DetalhesActivity extends AppCompatActivity {
         if (bundle != null) {
             id = (int) bundle.get("id");
             nome = (String) bundle.get("nome");
-            nomeCidade.setText(nome);
+            nomeLocal.setText(nome);
             latitude = (String) bundle.get("latitude");
             longitude = (String) bundle.get("longitude");
 
-            fotoCidade.setImageResource((int) bundle.get("foto"));
+            fotoLocal.setImageResource((int) bundle.get("foto"));
 
             //Pegando a cor mais vibrante da foto e colocando no rodapé de informações das previsões futuras
             Bitmap foto = BitmapFactory.decodeResource(this.getResources(), (int) bundle.get("foto"));
@@ -120,10 +116,10 @@ public class DetalhesActivity extends AppCompatActivity {
     }
 
     private void iniciandoViews() {
-        fotoCidade = (ImageView) findViewById(R.id.id_foto_local);
+        fotoLocal = (ImageView) findViewById(R.id.id_foto_local);
         background = (LinearLayout) findViewById(R.id.id_background);
 
-        nomeCidade = (TextView) findViewById(R.id.id_cidade_pais);
+        nomeLocal = (TextView) findViewById(R.id.id_cidade_pais);
         descricaoDoTempo = (TextView) findViewById(R.id.id_descricao);
         temperaturaAtual = (TextView) findViewById(R.id.id_temperatura);
         umidadeDoAr = (TextView) findViewById(R.id.id_umidade);

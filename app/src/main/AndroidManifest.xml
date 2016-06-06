@@ -21,10 +21,10 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".NovaCidadeActivity"
+            android:name=".NovoLocalActivity"
             android:label="Adicionar Cidade" />
         <activity
-            android:name=".EditarCidadeActivity"
+            android:name=".EditarLocalActivity"
             android:label="Editar Cidade" />
         <activity
             android:name=".SobreActivity"
