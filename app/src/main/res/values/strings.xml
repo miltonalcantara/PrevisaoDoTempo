@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PrevTempo</string>
+
+    <!-- Splash Screen -->
+    <string name="logo_do_aplicativo">Logo do aplicativo</string>
+    <string name="desenvolvedora_do_aplicativo">Logo da desenvolvedora do aplicativo</string>
+
+    <!--Detalhes-->
+    <string name="imagem_cidade">Imagem da cidade</string>
+    <string name="icone_clima">Ícone do clima</string>
+    <string name="place_holder_temperatura">--º</string>
+    <string name="place_holder_cidade_pais">CIDADE, PAÍS</string>
+    <string name="place_holder_dia_semana">Data e Hora</string>
+    <string name="place_holder_data"> 00/00/0000</string>
+
+    <!-- SOBRE -->
+    <string name="sobre">Sobre o desenvolvedor</string>
+    <string name="title_activity_sobre">Sobre</string>
+    <string name="sobre_o_app"><b>Milton Alcântara</b>, é designer e programador, atua na área de Design desde 2008 e na área de TI a partir de 2012 onde já participou de feiras de computação e foi premiado 3 vezes.</string>
+    <string name="title_tabela">Tabela</string>
+    <string name="descricao_icone_milton">Ícone do desenvolvedor do aplicativo</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item_nova_cidade"
+        android:icon="@drawable/ic_action_name"
+        android:title="Adicionar cidade"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_item_sobre"
+        android:orderInCategory="100"
+        android:title="@string/sobre"
+        app:showAsAction="never" />
+</menu>
